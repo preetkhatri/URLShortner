@@ -4,7 +4,6 @@ const shortid = require('shortid');
 const getAllUrl = async (req,res) =>{
     const urls = await Url.find({});
     res.status(200).json({urls})
-    // return res.send("Fine");
 }
 
 const shortUrl = async (req,res) =>{

@@ -8,7 +8,7 @@ btn.addEventListener("click", consolefn);
 let value;
 
 const postData = async ()=>{
-    const res = await fetch (`${backendURI}/api/v1/urls`, {
+    const res = await fetch (`${backendURI}/`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -22,7 +22,7 @@ const postData = async ()=>{
 }
 
 const getData = async ()=> {
-    const response = await fetch (`${backendURI}/api/v1/urls`, {
+    const response = await fetch (`${backendURI}/`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",

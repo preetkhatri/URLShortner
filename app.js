@@ -6,6 +6,7 @@ const connectDB = require('./db/connect');
 require('dotenv').config();
 
 app.use(express.json());
+app.use(express.static('public'));
 app.use(cors());
 app.use('/api/v1/urls',url);
 

@@ -1,4 +1,4 @@
-const backendURI = "http://localhost:3000";
+const backendURI = "https://url-shortner-p26q.onrender.com";
 
 const inputUrl = document.getElementById("redirectUrl");
 const btn = document.getElementById("shortenBtn");

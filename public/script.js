@@ -17,8 +17,9 @@ const postData = async ()=>{
     });
     const data = await res.json();
     const {shorturl} = data.entry;
+    const {redirecturl} = data.entry;
 
-    document.getElementById("updatedUrl").innerText = `${backendURI}/api/v1/urls/${shorturl}`;
+    document.getElementById("updatedUrl").innerHTML = `<a href='${redirecturl}'>${backendURI}/api/v1/urls/${shorturl}</a>`;
 }
 
 const getData = async ()=> {
